@@ -6,29 +6,29 @@
   <configuration>
     <name>Debug</name>
     <outputs>
-      <file>$PROJ_DIR$\pid.c</file>
       <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\pid.c</file>
       <file>$PROJ_DIR$\pid.h</file>
       <file>$PROJ_DIR$\stdint.h</file>
-      <file>$TOOLKIT_DIR$\inc\inavr.h</file>
       <file>$TOOLKIT_DIR$\lib\clib\cl3t-ec_mul-sf.r90</file>
+      <file>$TOOLKIT_DIR$\inc\inavr.h</file>
       <file>$TOOLKIT_DIR$\inc\iom32.h</file>
-      <file>$TOOLKIT_DIR$\src\template\cfg3toim.xcl</file>
-      <file>$TOOLKIT_DIR$\inc\ioavr.h</file>
-      <file>$TOOLKIT_DIR$\inc\iomacro.h</file>
-      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
       <file>$PROJ_DIR$\Debug\Exe\d3_pid.d90</file>
-      <file>$TOOLKIT_DIR$\src\template\cfgm32.xcl</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.r90</file>
       <file>$PROJ_DIR$\Debug\Obj\pid.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.r90</file>
+      <file>$TOOLKIT_DIR$\src\template\cfgm32.xcl</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$TOOLKIT_DIR$\inc\ioavr.h</file>
+      <file>$TOOLKIT_DIR$\src\template\cfg3toim.xcl</file>
+      <file>$TOOLKIT_DIR$\inc\iomacro.h</file>
       <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
       <file>$TOOLKIT_DIR$\inc\bitdefinitions\iom32.inc</file>
       <file>$PROJ_DIR$\Debug\Obj\pid.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\clib\sysmac.h</file>
       <file>$TOOLKIT_DIR$\inc\clib\stddef.h</file>
+      <file>$TOOLKIT_DIR$\inc\clib\sysmac.h</file>
       <file>$TOOLKIT_DIR$\lib\clib\cl3s-ec_mul-sf.r90</file>
-      <file>$TOOLKIT_DIR$\src\template\cfg3soim.xcl</file>
       <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\src\template\cfg3soim.xcl</file>
       <file>$PROJ_DIR$\Debug\Obj\pid.__cstat.et</file>
       <file>$PROJ_DIR$\Debug\Exe\d3_pid.hex</file>
     </outputs>
@@ -42,6 +42,33 @@
       </outputs>
     </file>
     <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 15</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 21</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 11 3 16 12 6 14 19 5 2 18</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 5 11 12 6 14 16 3 18 19 2</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
       <name>$PROJ_DIR$\pid.c</name>
       <outputs>
         <tool>
@@ -50,7 +77,7 @@
         </tool>
         <tool>
           <name>ICCAVR</name>
-          <file> 14</file>
+          <file> 8</file>
         </tool>
         <tool>
           <name>__cstat</name>
@@ -60,38 +87,11 @@
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 19 3 18 2</file>
+          <file> 18 3 19 2</file>
         </tool>
         <tool>
           <name>ICCAVR</name>
-          <file> 2 3 19 18</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\main.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 15</file>
-        </tool>
-        <tool>
-          <name>ICCAVR</name>
-          <file> 13</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 22</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 10 3 16 8 6 9 18 4 2 19</file>
-        </tool>
-        <tool>
-          <name>ICCAVR</name>
-          <file> 4 10 8 6 9 16 3 19 18 2</file>
+          <file> 2 3 18 19</file>
         </tool>
       </inputs>
     </file>
@@ -100,7 +100,7 @@
       <inputs>
         <tool>
           <name>XLINK</name>
-          <file> 12 7 13 14 5</file>
+          <file> 10 13 9 8 4</file>
         </tool>
       </inputs>
     </file>
@@ -109,7 +109,7 @@
       <inputs>
         <tool>
           <name>XLINK</name>
-          <file> 12 21 13 14 20</file>
+          <file> 10 22 9 8 20</file>
         </tool>
       </inputs>
     </file>
@@ -122,24 +122,24 @@
     <name>Release</name>
     <outputs>
       <file>$PROJ_DIR$\lcd.h</file>
-      <file>$PROJ_DIR$\pid.c</file>
       <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\pid.c</file>
       <file>$PROJ_DIR$\pid.h</file>
       <file>$PROJ_DIR$\stdint.h</file>
       <file>$TOOLKIT_DIR$\inc\inavr.h</file>
       <file>$TOOLKIT_DIR$\inc\iom32.h</file>
+      <file>$TOOLKIT_DIR$\src\template\cfgm32.xcl</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
       <file>$TOOLKIT_DIR$\inc\ioavr.h</file>
       <file>$TOOLKIT_DIR$\inc\iomacro.h</file>
-      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
-      <file>$TOOLKIT_DIR$\src\template\cfgm32.xcl</file>
       <file>$TOOLKIT_DIR$\inc\bitdefinitions\iom32.inc</file>
-      <file>$TOOLKIT_DIR$\inc\clib\sysmac.h</file>
       <file>$TOOLKIT_DIR$\inc\clib\stddef.h</file>
+      <file>$TOOLKIT_DIR$\inc\clib\sysmac.h</file>
       <file>$TOOLKIT_DIR$\lib\clib\cl3s-ec_mul-sf.r90</file>
       <file>$TOOLKIT_DIR$\src\template\cfg3soim.xcl</file>
-      <file>$PROJ_DIR$\Release\Obj\pid.pbi</file>
       <file>$PROJ_DIR$\Release\Exe\d3_pid.hex</file>
       <file>$PROJ_DIR$\Release\Obj\pid.r90</file>
+      <file>$PROJ_DIR$\Release\Obj\pid.pbi</file>
       <file>$PROJ_DIR$\Release\Obj\d3_pid.pbd</file>
       <file>$PROJ_DIR$\Release\Obj\main.r90</file>
       <file>$PROJ_DIR$\Release\Obj\main.__cstat.et</file>
@@ -151,36 +151,9 @@
       <outputs>
         <tool>
           <name>XLINK</name>
-          <file> 17</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\pid.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
           <file> 16</file>
         </tool>
-        <tool>
-          <name>ICCAVR</name>
-          <file> 18</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 22</file>
-        </tool>
       </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 13 4 12 3</file>
-        </tool>
-        <tool>
-          <name>ICCAVR</name>
-          <file> 3 4 13 12</file>
-        </tool>
-      </inputs>
     </file>
     <file>
       <name>$PROJ_DIR$\main.c</name>
@@ -201,11 +174,38 @@
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 11 9 4 12 7 3 6 8 5 13</file>
+          <file> 11 8 4 13 9 3 6 10 5 12</file>
         </tool>
         <tool>
           <name>ICCAVR</name>
-          <file> 5 9 7 6 8 11 4 13 12 3</file>
+          <file> 5 8 9 6 10 11 4 12 13 3</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\pid.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 17</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 22</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 12 4 13 3</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 3 4 12 13</file>
         </tool>
       </inputs>
     </file>
@@ -214,7 +214,7 @@
       <inputs>
         <tool>
           <name>XLINK</name>
-          <file> 10 15 20 18 14</file>
+          <file> 7 15 20 17 14</file>
         </tool>
       </inputs>
     </file>

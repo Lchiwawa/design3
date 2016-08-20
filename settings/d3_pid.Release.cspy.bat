@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files\IAR Systems\Embedded Workbench 7.4\common\bin\cspybat" -f "C:\_git\a3s\settings\d3_pid.Release.general.xcl" --backend -f "C:\_git\a3s\settings\d3_pid.Release.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 7.4\common\bin\cspybat" -f "C:\_git\design3\settings\d3_pid.Release.general.xcl" --backend -f "C:\_git\design3\settings\d3_pid.Release.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files\IAR Systems\Embedded Workbench 7.4\common\bin\cspybat" -f "C:\_git\a3s\settings\d3_pid.Release.general.xcl" "--debug_file=%~1" --backend -f "C:\_git\a3s\settings\d3_pid.Release.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 7.4\common\bin\cspybat" -f "C:\_git\design3\settings\d3_pid.Release.general.xcl" "--debug_file=%~1" --backend -f "C:\_git\design3\settings\d3_pid.Release.driver.xcl" 
 
 @echo off 
 :end
